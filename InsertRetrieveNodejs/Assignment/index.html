@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css" type="css/text">
+  <style>
+  body
+	{
+		font-family:"Times New Roman", Times, serif;
+		margin:0px;
+	}
+	ul
+	{
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+	background-color:#000000;
+	text-align:center;
+	
+}
+li
+{
+	float:left;
+	display:block;
+	margin:15px 0px;
+}
+li a
+{
+	color:#ffffff;
+	padding:100px 110px 100px 100px;
+}
+ul li a:hover
+{
+	background-color:#595959;
+	color:#f0f0f0
+}
+input[type=text]
+{
+width:300px;
+border:3px solid #c0c0c0;
+border-radius:0.5s;
+padding:12px 18px;
+font-size:15px;
+}
+input[type=submit]
+{
+padding:10px 20px;
+border-radius:0.2s;
+border:none;
+font-size:15px;
+background-color:#66cc00;
+color:white;
+}
+input[type=reset]
+{
+padding:10px 20px;
+border-radius:0.2s;
+border:none;
+font-size:15px;
+background-color:#66cc00;
+color:white;
+}
+input[type=url]
+{
+width:300px;
+border:3px solid #c0c0c0;
+border-radius:0.5s;
+padding:12px 18px;
+font-size:15px;
+}
+th,td
+{
+padding:10px 10px;
+}
+
+
+.container
+{
+padding:6px 12px;
+}
+.cont2
+{
+margin:100px 100px;
+border:0px solid ;
+background-color:#eaeaea;
+text-align:left;
+padding:20px 20px 20px 20px;
+font-size:18px;
+}
+
+</style>
+ </head>
+ <body>
+
+	  <ul type="none">
+		  <li><a href="#">Add Details of Movie</a></li>
+	  </ul>
+
+	</form>
+	<div class="cont2">
+		<h2 style="text-align:center;text-decoration:underline;">Add Movie Detail</h2>
+		<h3 style="display: none;" class=ins>Successfully Inserted</h3>
+		<form method="POST" action="./">
+			<table>
+				<tr>
+					<th>Name</th>
+					<td><input type="text" name="mov_name" placeholder="Name"></td>
+				</tr>
+				<tr>
+					<th>URL</th>
+					<td>
+						<input type="url" name="url_data" placeholder="URL of image">
+					</td>
+				</tr>
+				<tr>
+					<th>Summary</th>
+					<td>
+						<textarea name="mov_sum" rows="15" cols="50" placeholder="Summary"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Submit" onclick="success();"></td>
+					<td><input type="reset" value="Reset"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+<script>
+
+
+
+
+ function success()
+ {
+	 var x=document.getElementById("ins");
+	 x.style.display = "block";
+ }
+</script>
+ </body>
+</html>
